@@ -19,6 +19,7 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   backdrop-filter: blur(100px);
+  animation: 25s ease-in-out fond infinite;
   z-index: 0;
 }
 
@@ -91,6 +92,7 @@ menu>nav>a {
   color: whitesmoke;
   font-weight: bold;
   transform: rotate(.6deg);
+  transition: .2s ease-in-out;
   z-index: 3;
 }
 
@@ -150,6 +152,7 @@ section {
   width: 100%;
   height: auto;
   font-size: 1.2em;
+  animation: .6s ease apparition forwards;
   z-index: 2;
 }
 
@@ -192,6 +195,33 @@ footer {
   background-color: #054a91;
   color: white;
   z-index: 3;
+}
+
+@keyframes apparition {
+  from {
+    margin-top: 100%;
+  }
+  to {
+    margin-top: 0;
+  }
+}
+
+@keyframes fond {
+  from {
+    backdrop-filter: blur(100px) saturate(150%) hue-rotate(0deg);
+  }
+  25% {
+    backdrop-filter: blur(1000px) saturate(150%) hue-rotate(50deg);
+  }
+  50% {
+    backdrop-filter: blur(1000px) saturate(150%) hue-rotate(100deg);
+  }
+  50% {
+    backdrop-filter: blur(1000px) saturate(150%) hue-rotate(50deg);
+  }
+  to {
+    backdrop-filter: blur(100px) saturate(150%) hue-rotate(0deg);
+  }
 }
 
 @media (max-width: 950px) {
