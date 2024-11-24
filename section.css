@@ -1,0 +1,85 @@
+span {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+  height: auto;
+  margin-top: 2%;
+}
+
+h2 {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: space-around;
+  justify-content: flex-start;
+  width: 100%;
+  font-size: 1.6em;
+  font-weight: bold;
+  text-shadow: 2px 2px 18px white,
+    -2px -2px 18px white;
+}
+
+h3 {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: space-around;
+  justify-content: flex-start;
+  width: 100%;
+  font-size: 1.4em;
+  font-weight: bold;
+  text-shadow: 2px 2px 18px white,
+    2px 2px 18px white;
+}
+
+p {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
+  height: auto;
+  color: black;
+  transform: rotate(-.5deg);
+}
+
+address>p {
+  padding: 2% 4%;
+  font-weight: bolder;
+  background-color: black;
+  color: white;
+}
+
+mark {
+  padding: 2%;
+  border-radius: 5px;
+  background: rgb(241, 241, 0);
+}
+
+span>dl {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 70%;
+}
+
+article>dl {
+  margin-bottom: 8%;
+}
+
+article>dl>dt {
+  width: auto;
+  font-size: 1.2em;
+  font-weight: bold;
+  margin: 1em 0;
+  padding: .5em;
+  transform: rotate(-1deg);
+}
+
+article>dl>dd {
+  font-size: 1.2em;
+  line-height: 1.2em;
+  text-wrap: balance;
+  transform: rotate(-1deg);
+}
