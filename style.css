@@ -241,6 +241,10 @@ footer {
     justify-content: space-around;
   }
 
+aside {
+  width: 100%;
+}
+
   menu>nav>a {
     width: 25%;
   }  
