@@ -93,4 +93,7 @@ article>dl {
   width: 92%;
   margin-bottom: 8%;
 }
+span>dl>dt {
+  display: none;
+}
 }
