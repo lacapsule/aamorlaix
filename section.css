@@ -83,3 +83,13 @@ article>dl>dd {
   text-wrap: balance;
   transform: rotate(-1deg);
 }
+
+@media (max-width: 950px) { 
+article>dl {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: space-around;
+  margin-bottom: 8%;
+}
+}
